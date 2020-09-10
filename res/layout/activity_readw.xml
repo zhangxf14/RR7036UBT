@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+   <ScrollView
+             android:id="@+id/scrollView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >  
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView 
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="UID:"
+                />
+            
+            <EditText 
+                android:id="@+id/et_rr9id"
+                android:layout_width="230dp"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:focusable="false"
+                android:editable="false"
+                />
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="Type:"
+                />
+              <RadioGroup
+			        android:id="@+id/gendergroup"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="30dp"
+			        android:orientation="horizontal">"
+
+                 <RadioButton
+                     android:id="@+id/rb_typeA"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="A" />
+
+                 <RadioButton
+                     android:id="@+id/rb_typeB"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:checked="true"
+                     android:text="B" />
+
+               </RadioGroup>
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="BlockNum:"
+                />
+
+            <EditText
+                android:id="@+id/et_rr9num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="0" />
+            
+        </TableRow>
+        
+         <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="BlockNums:"
+                />
+
+            <EditText
+                android:id="@+id/et_rr9nums"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rm_6c_et_height"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="10" />
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="Data(Hex):"
+                />
+
+            <EditText
+                android:id="@+id/et_rr9content"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="4"
+                android:gravity="left" />
+            
+        </TableRow>
+
+       
+
+        </TableLayout>
+        
+         <TableLayout
+               android:layout_width="@dimen/list_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+             >
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            
+            <Button 
+                android:id="@+id/button_rr9read"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Read"/>
+
+            <Button
+                android:id="@+id/btn_MultiRead"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="MultiRead" />
+            
+            <Button 
+                android:id="@+id/button_rr9write"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Write"/>
+        </TableRow>
+    </TableLayout>
+
+        
+             </LinearLayout>
+         </ScrollView>
+
+</LinearLayout>

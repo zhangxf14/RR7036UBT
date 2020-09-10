@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RR7036UBT</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_iso15693">Iso15693Activity</string>
+    <string name="title_activity_iso14443_a">Iso14443AActivity</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_read_w">ReadWActivity</string>
+    <string name="title_activity_get_active">GetActive</string>
+
+</resources>

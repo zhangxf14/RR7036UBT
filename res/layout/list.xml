@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal">
+    
+    <TextView 
+        android:id="@+id/list_lable"
+        android:layout_height="30dp"
+        android:layout_width="@dimen/lable_width"
+        android:textSize="20dp"
+        />
+    
+    <TextView 
+        android:layout_height="fill_parent"
+        android:layout_width="@dimen/list_devide"
+        android:background="#000000"/>
+    
+    <TextView 
+        android:id="@+id/list_number"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/lable_num_width"/>
+    
+</LinearLayout>

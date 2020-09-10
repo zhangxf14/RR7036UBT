@@ -1,0 +1,127 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" 
+	        android:layout_above="@+id/scanlayout">
+
+	    <TextView
+	            android:layout_width="@dimen/list_width"
+	            android:layout_height="@dimen/list_devide"
+	            android:layout_marginTop="10dp"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@color/divide" />
+	    
+	    <LinearLayout 
+	        android:layout_width="@dimen/list_width"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        >
+	        
+	        <TextView
+	            android:layout_width="@dimen/list_devide"
+	            android:layout_height="fill_parent"
+	            android:background="@color/divide" />
+	        
+	        <TextView
+	            android:layout_width="@dimen/lable_width"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="UID" />
+	        
+	        <TextView
+	            android:layout_width="@dimen/list_devide"
+	            android:layout_height="fill_parent"
+	            android:background="@color/divide" />
+	        
+	        <TextView
+	            android:layout_width="@dimen/lable_num_width"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="Times" />
+	        
+	        <TextView
+	            android:layout_width="@dimen/list_devide"
+	            android:layout_height="fill_parent"
+	            android:background="@color/divide" />
+	        
+	    </LinearLayout>
+	    
+	    <TextView
+	            android:layout_width="@dimen/list_width"
+	            android:layout_height="@dimen/list_devide"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@color/divide" />
+	    
+	    <LinearLayout
+	        android:layout_width="@dimen/list_width"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_horizontal"
+	        
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+	            android:layout_width="@dimen/list_devide"
+	            android:layout_height="fill_parent"
+	            android:background="@color/divide" />
+	
+	        <ListView
+	            android:id="@+id/listrr9"
+	            android:layout_width="301dp"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center_horizontal" >
+	        </ListView>
+	        
+	        <TextView
+	            android:layout_width="@dimen/list_devide"
+	            android:layout_height="fill_parent"
+	            android:gravity="center"
+	            android:background="@color/divide" />
+	        <TextView
+	        android:id="@+id/TextView_fg"
+	        android:layout_width="@dimen/list_width"
+	        android:layout_height="@dimen/list_devide"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@color/divide" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+    	<RelativeLayout 
+    	android:id="@+id/scanlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Number:" />
+
+        <TextView 
+            android:id="@+id/tx_numrr9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/num"/>        
+	        
+	    <Button
+	        android:id="@+id/button_scanrr9"
+	        android:layout_width="120dp"
+	        android:layout_height="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:text="Scan" >
+	    </Button>
+	    
+	    </RelativeLayout>
+
+</RelativeLayout>
